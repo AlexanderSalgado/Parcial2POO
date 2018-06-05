@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Egipcios;
+package Main.CentrodeMando;
 
 /**
  *
  * @author rodol
  */
-public class FactoryEgipcios {
+public class CentroMando{
     
 }

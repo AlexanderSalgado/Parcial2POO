@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Egipcios;
+package Main.Arqueros;
+
 
 /**
  *
  * @author rodol
  */
-public class GuerrerosEgipcios {
+public interface FactoryArqueros{
+    void atacar();
+    void defender();
     
 }
+

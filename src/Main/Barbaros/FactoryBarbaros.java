@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vikingos;
+package Main.Barbaros;
 
 /**
  *
  * @author rodol
  */
-public class GuerrerosVikingos {
+public interface FactoryBarbaros {
+    void atacar();
+    void defender();
     
 }

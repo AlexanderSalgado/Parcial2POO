@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mayas;
+package Main.CentrodeMando;
 
 /**
  *
  * @author rodol
  */
-public class GuerrerosMayas {
+public interface Mando {
+    
+    void nivel();
     
 }

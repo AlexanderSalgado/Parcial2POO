@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mayas;
+package Main.Brujos;
 
 /**
  *
  * @author rodol
  */
-public class FactoryMayas {
-    
+public interface FactoryBrujos {
+    void atacar();
+    void defender();
 }
