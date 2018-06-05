@@ -5,12 +5,18 @@
  */
 package Main;
 
-
+import Main.Arqueros.FactoryArqueros;
+import Main.Barbaros.FactoryBarbaros;
+import Main.Brujos.FactoryBrujos;
+import Main.CentrodeMando.Mando;
 /**
  *
  * @author rodol
  */
 public interface AbstractFactory {
     
-   
+   FactoryBarbaros getBarbaro(String type);
+   FactoryArqueros getArqueros(String type);
+   FactoryBrujos getBrujos(String type);
+   Mando getMandos(String type);
 }

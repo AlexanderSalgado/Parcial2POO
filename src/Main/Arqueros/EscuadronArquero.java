@@ -21,11 +21,11 @@ public class EscuadronArquero implements FactoryArqueros {
     }
      @Override
     public void atacar() {
-        System.out.println("30% Daño");
+        System.out.println("% Daño");
     }
     @Override
     public void defender(){
-        System.out.println("20% de daño");
+        System.out.println("% de daño");
     }
 }
     
