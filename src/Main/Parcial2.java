@@ -5,17 +5,28 @@
  */
 package Main;
 
+import java.util.Scanner;
+
 /**
  *
  * @author rodol
  */
 public class Parcial2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+      int cont=0;
+          int codigo;
+      
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese 1 si es el jugador 1");
+        codigo=leer.nextInt();
+        Players player1=new Players(codigo);
+        System.out.println("Ingrese 2 si es el jugador 2");
+        codigo=leer.nextInt();
+        Players player2=new Players(codigo);
+        
+        
+        
     }
     
 }

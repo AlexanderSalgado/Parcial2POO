@@ -29,6 +29,10 @@ public class CentroBrujos implements AbstractFactory{
     @Override
     public FactoryBrujos getBrujos(String type) {
           switch(type){
+              case "Escuadron Brujo":
+                  return new EscuadronBrujo();
+              case "Especialista Brujo":
+                  return new EspecialistaBrujo();
               
           }
         return null;
