@@ -15,6 +15,24 @@ public class CentroMando extends CentroFactory{
      public int elixir;
      public int esenciazul;
      public int fuego;
+     public int mana;
+     public int gema;
+
+    public int getEsenciazul() {
+        return esenciazul;
+    }
+
+    public void setEsenciazul(int esenciazul) {
+        this.esenciazul = esenciazul;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
 
     
      public int getOro() {
@@ -39,11 +57,11 @@ public class CentroMando extends CentroFactory{
         this.elixir = elixir;
     }
      public int getGema() {
-        return esenciazul;
+        return gema;
     }
 
     public void setEsencia(int esenciazul) {
-        this.esenciazul = esenciazul;
+        this.gema = esenciazul;
     }
     
      public int getFuego() {
