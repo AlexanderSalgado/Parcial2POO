@@ -8,7 +8,6 @@ package Main;
 import Main.Arqueros.CentroArqueros;
 import Main.Barbaros.CentroBarbaro;
 import Main.Brujos.CentroBrujos;
-import Main.CentrodeMando.CentroMando;
 
 /**
  *
@@ -24,8 +23,6 @@ public class Recoleccion {
                 return new CentroBarbaro();
             case "Brujos":
                 return new CentroBrujos();
-            case "Mandos":
-                return new CentroMando();
         }
         return null;
     }

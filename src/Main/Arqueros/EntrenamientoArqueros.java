@@ -9,15 +9,12 @@ package Main.Arqueros;
  *
  * @author rodol
  */
-public class EscuadronArquero implements FactoryArqueros {
-     public boolean estado= false;
-    public int vida=0;
+public class EntrenamientoArqueros implements FactoryArqueros {
 
-    public int getVida() {
-        return vida;
-    }
     
-     public boolean getEstado() {
+      public boolean estado=false;
+
+    public boolean isEstado() {
         return estado;
     }
 
@@ -25,31 +22,25 @@ public class EscuadronArquero implements FactoryArqueros {
         this.estado = estado;
     }
 
-
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-     @Override
-    public void atacar() {
-        System.out.println("% Daño");
-    }
-    @Override
-    public void defender(){
-        System.out.println("% de daño");
-    }
-
-      @Override
-    public void vida() {
-    }
     
     @Override
-    public void construir() {
+    public void atacar() {
     }
+
+    @Override
+    public void defender() {
+    }
+
+    @Override
+    public void construir() {
+ System.out.println("Se ha construido edificacion entrenamiento Arqueros");
+    }
+
 
     @Override
     public int recolectar() {
-        return 0;
-    }
+    return 0;
+        }
 
     @Override
     public void generar() {
@@ -57,26 +48,31 @@ public class EscuadronArquero implements FactoryArqueros {
 
     @Override
     public boolean entrenar() {
-          if(estado==false){
+    if(estado==false){
             setEstado(true);
         }
         else{
             setEstado(false);
         }
-        return estado;
+    return estado;
+    }  
+    
+    @Override
+    public boolean estado() {
+    if(estado==false){
+            setEstado(true);
+        }
+        else{
+            setEstado(false);
+        }
+    return estado;
     }
 
     @Override
-    public boolean estado() {
-        if(estado==false){
-            setEstado(true);
-        }
-        else{
-            setEstado(false);
-        }
-        return estado;
+    public void vida() {
     }
 
-  
-}
+      
+    }
     
+

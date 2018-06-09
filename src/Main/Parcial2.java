@@ -21,20 +21,11 @@ public class Parcial2 {
           int codigo;
           
       
-        CentroMando mando1=new CentroMando();
+     
         
           
           
-          
-          
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese 1 si es el jugador 1");
-        codigo=leer.nextInt();
-        Players player1=new Players(codigo);
-        System.out.println("Ingrese 2 si es el jugador 2");
-        codigo=leer.nextInt();
-        Players player2=new Players(codigo);
-        
+         
         
         
     }

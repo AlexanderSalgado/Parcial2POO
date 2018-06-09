@@ -8,7 +8,7 @@ package Main.Barbaros;
 import Main.AbstractFactory;
 import Main.Arqueros.FactoryArqueros;
 import Main.Brujos.FactoryBrujos;
-import Main.CentrodeMando.Mando;
+
 
 /**
  *
@@ -37,9 +37,5 @@ public class CentroBarbaro implements AbstractFactory {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public Mando getMandos(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

@@ -13,6 +13,13 @@ package Main.Arqueros;
 public interface FactoryArqueros{
     void atacar();
     void defender();
+    void construir();
+    boolean entrenar(); 
+    void vida();
+    int recolectar();
+    void generar();
+    
+    boolean estado();
     
 }
 
