@@ -9,15 +9,42 @@ package Main.CentrodeMando;
  *
  * @author rodol
  */
-public class CentroMando extends CentroFactory{
-     public int vida;
-     public int oro;
-     public int elixir;
-     public int esenciazul;
-     public int fuego;
-     public int mana;
-     public int gema;
+public class CentroMando{
+     public int vida=150000;
+     public int oro=500;
+     public int esenciazul=300;
+     public int mana=300;
+     public int capacidad1=3000;
+     public int capacidad2=6000;
+     public int capacidad3=9000;
 
+    
+
+     public int getCapacidad1() {
+        return capacidad1;
+    }
+
+    public void setCapacidad1(int capacidad1) {
+        this.capacidad1 = capacidad1;
+    }
+
+    public int getCapacidad2() {
+        return capacidad2;
+    }
+
+    public void setCapacidad2(int capacidad2) {
+        this.capacidad2 = capacidad2;
+    }
+
+    public int getCapacidad3() {
+        return capacidad3;
+    }
+
+    public void setCapacidad3(int capacidad3) {
+        this.capacidad3 = capacidad3;
+    }
+
+     
     public int getEsenciazul() {
         return esenciazul;
     }
@@ -49,28 +76,7 @@ public class CentroMando extends CentroFactory{
     public void setVida(int vida) {
         this.vida = vida;
     }
-     public int getElixir() {
-        return elixir;
-    }
 
-    public void setElixir(int elixir) {
-        this.elixir = elixir;
-    }
-     public int getGema() {
-        return gema;
-    }
-
-    public void setEsencia(int esenciazul) {
-        this.gema = esenciazul;
-    }
-    
-     public int getFuego() {
-        return fuego;
-    }
-
-    public void setFuego(int fuego ) {
-        this.fuego = fuego;
-    }
     
     public void level() {
         System.out.println("1000 de danio");

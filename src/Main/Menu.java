@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Main.CentrodeMando;
+package Main;
 
 /**
  *
  * @author rodol
  */
-public interface Mando {
+public class Menu {
     
-    void nivel();
     
 }

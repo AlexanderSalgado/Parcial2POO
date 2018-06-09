@@ -8,7 +8,7 @@ package Main.Arqueros;
 import Main.AbstractFactory;
 import Main.Barbaros.FactoryBarbaros;
 import Main.Brujos.FactoryBrujos;
-import Main.CentrodeMando.Mando;
+
 
 /**
  *
@@ -37,10 +37,7 @@ public class CentroArqueros implements AbstractFactory {
         return null;
     }
 
-    @Override
-    public Mando getMandos(String type) {
-        return null;
-    }
+
     
     
 }

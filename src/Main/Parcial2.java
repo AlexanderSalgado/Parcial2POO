@@ -5,6 +5,9 @@
  */
 package Main;
 
+import Main.Arqueros.FactoryArqueros;
+import Main.CentrodeMando.CentroMando;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -16,7 +19,14 @@ public class Parcial2 {
     public static void main(String[] args) {
       int cont=0;
           int codigo;
+          
       
+        CentroMando mando1=new CentroMando();
+        
+          
+          
+          
+          
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese 1 si es el jugador 1");
         codigo=leer.nextInt();
