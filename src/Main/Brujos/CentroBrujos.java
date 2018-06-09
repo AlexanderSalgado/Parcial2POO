@@ -8,7 +8,6 @@ package Main.Brujos;
 import Main.AbstractFactory;
 import Main.Arqueros.FactoryArqueros;
 import Main.Barbaros.FactoryBarbaros;
-import Main.CentrodeMando.Mando;
 
 /**
  *
@@ -38,9 +37,6 @@ public class CentroBrujos implements AbstractFactory{
         return null;
     }
 
-    @Override
-    public Mando getMandos(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }

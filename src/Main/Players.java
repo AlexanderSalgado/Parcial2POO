@@ -97,6 +97,15 @@ public class Players {
         this.raza = raza;
     }
 
+    public ArrayList<FactoryArqueros> getEntrenado(){
+        return entrenamiento;
+    }
+     public void  setEntrenado(ArrayList<FactoryArqueros> entrenado){
+        this.entrenamiento = entrenado;
+    }
+    
+    
+    
     public CentroMando getMando() {
         return mando;
     }
@@ -113,12 +122,14 @@ public class Players {
         this.num = num;
     }
     
+    
+    
     public int fase(int cont){
         if(cont%2==0){
-        System.out.println("Es turno del jugador "+ (cont%2)+2);
+        System.out.println("Le toca al jugador: "+ (cont%2)+2);
         }
         else{
-            System.out.println("Es el turno del jugador"+(cont%2));
+            System.out.println("Le toca al jugador: "+(cont%2));
         }
         cont=cont+1;
         return cont;

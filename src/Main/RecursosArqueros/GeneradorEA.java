@@ -4,46 +4,44 @@
  * and open the template in the editor.
  */
 package Main.RecursosArqueros;
+
 import Main.Arqueros.FactoryArqueros;
-
-
 
 /**
  *
  * @author rodol
  */
-public class GeneradorOro implements FactoryArqueros {
+public class GeneradorEA implements FactoryArqueros {
     
-    public int vida=200;
-    public int oro;
-    public boolean estado=false;
+    public int vida = 200;
+    public int ea;
+    public boolean estado= false;
     
-    public boolean getEstado() {
+    public boolean getEstado(){
         return estado;
     }
-
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    }
-
-     public int getOro() {
-        return oro;
-    }
-
-    public void setOro(int Oro) {
-        this.oro = Oro;
+    
+    public void setEstado(boolean estado){
+       this.estado= estado;
     }
     
-    
-     public int getVida() {
+    public int getVida(){
         return vida;
     }
-
-    public void setVida(int Vida) {
-        this.vida = Vida;
-    }
-     
     
+    public void setVida(int vida){
+        this.vida = vida;
+    }
+    
+    public int getEA(){
+        return ea;
+    }
+    
+    public void setEA(int mana){
+        this.ea = mana;
+    }
+    
+
     @Override
     public void atacar() {
     }
@@ -57,27 +55,30 @@ public class GeneradorOro implements FactoryArqueros {
     }
 
     @Override
-    public int recolectar() {
-        int num;
-        num=getOro();
-        setOro(0);
-        return num;
-    }
-
-    @Override
-    public void generar() {
-        
-           setOro(oro+50);
-    }
-
-    @Override
     public boolean entrenar() {
         return estado;
     }
 
     @Override
+    public void vida() {
+    }
+
+    @Override
+    public int recolectar() {
+        int num;
+        num=getEA();
+        setEA(0);
+        return num;
+    }
+
+    @Override
+    public void generar() {
+        setEA(ea+35);
+    }
+
+    @Override
     public boolean estado() {
-         if(estado==false){
+        if(estado==false){
             setEstado(true);
         }
         else{
@@ -85,11 +86,5 @@ public class GeneradorOro implements FactoryArqueros {
         }
         return estado;
     }
-
-    @Override
-    public void vida() {
-    }
-    
-   
     
 }
