@@ -87,7 +87,13 @@ public class GeneradorOro implements FactoryArqueros {
     }
 
     @Override
-    public void vida() {
+    public int vida() {
+        return vida;
+    }
+
+    @Override
+    public boolean eleccion() {
+          return estado;
     }
     
    

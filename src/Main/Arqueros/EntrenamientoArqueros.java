@@ -13,6 +13,7 @@ public class EntrenamientoArqueros implements FactoryArqueros {
 
     
       public boolean estado=false;
+      public int vida=0;
 
     public boolean isEstado() {
         return estado;
@@ -21,6 +22,14 @@ public class EntrenamientoArqueros implements FactoryArqueros {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
+    
+    public int getVida() {
+       return vida;
+   }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+   }
 
     
     @Override
@@ -69,7 +78,13 @@ public class EntrenamientoArqueros implements FactoryArqueros {
     }
 
     @Override
-    public void vida() {
+    public int vida() {
+        return vida;
+    }
+
+    @Override
+    public boolean eleccion() {
+        return estado;
     }
 
       

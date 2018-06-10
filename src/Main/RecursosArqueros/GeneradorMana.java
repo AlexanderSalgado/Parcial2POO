@@ -59,7 +59,8 @@ public class GeneradorMana implements FactoryArqueros {
     }
 
     @Override
-    public void vida() {
+    public int vida() {
+        return vida;
     }
 
     @Override
@@ -84,6 +85,11 @@ public class GeneradorMana implements FactoryArqueros {
             setEstado(false);
         }
         return estado;
+    }
+
+    @Override
+    public boolean eleccion() {
+    return estado;
     }
     
 }

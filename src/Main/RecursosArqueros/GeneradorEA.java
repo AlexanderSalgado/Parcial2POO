@@ -60,7 +60,8 @@ public class GeneradorEA implements FactoryArqueros {
     }
 
     @Override
-    public void vida() {
+    public int vida() {
+         return vida;
     }
 
     @Override
@@ -85,6 +86,10 @@ public class GeneradorEA implements FactoryArqueros {
             setEstado(false);
         }
         return estado;
+    }
+    @Override
+    public boolean eleccion() {
+          return estado;
     }
     
 }

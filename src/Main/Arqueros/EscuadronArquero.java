@@ -39,7 +39,8 @@ public class EscuadronArquero implements FactoryArqueros {
     }
 
       @Override
-    public void vida() {
+    public int vida() {
+        return vida;
     }
     
     @Override
@@ -75,6 +76,11 @@ public class EscuadronArquero implements FactoryArqueros {
             setEstado(false);
         }
         return estado;
+    }
+
+    @Override
+    public boolean eleccion() {
+          return estado;
     }
 
   

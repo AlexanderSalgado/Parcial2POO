@@ -11,12 +11,19 @@ package Main.CentrodeMando;
  */
 public class CentroMando{
      public int vida=150000;
-     public int oro=500;
+     public int oro=300;
      public int esenciazul=300;
      public int mana=300;
-     public int capacidad1=3000;
-     public int capacidad2=6000;
-     public int capacidad3=9000;
+     public int capacidad1=1000;
+     public int capacidad2=5000;
+     public int capacidad3=3000;
+     public int capacidadx1=10000;
+     public int capacidadx2=50000;
+     public int capacidadx3=30000;
+     public int capacidadx11=5000000;
+     public int capacidadx22=2500000;
+     public int capacidadx33=1500000;
+     
 
     
 
@@ -79,7 +86,9 @@ public class CentroMando{
 
     
     public void level() {
-        System.out.println("1000 de danio");
+        setCapacidad1(capacidadx1);
+        setCapacidad2(capacidadx2);
+        setCapacidad3(capacidadx3);
     }
 }
     

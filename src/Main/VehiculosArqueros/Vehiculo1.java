@@ -22,6 +22,16 @@ public class Vehiculo1 implements FactoryArqueros {
     public void setEstado(boolean estado){
         this.estado = estado;
     }
+    
+        public int vida=0;
+
+    public int getVida() {
+       return vida;
+   }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
 
     @Override
     public void atacar() {
@@ -42,8 +52,9 @@ public class Vehiculo1 implements FactoryArqueros {
     }
 
     @Override
-    public void vida() {
-    }
+    public int vida() {
+       return vida; 
+        }
 
     @Override
     public int recolectar() {
@@ -63,6 +74,11 @@ public class Vehiculo1 implements FactoryArqueros {
             setEstado(false);
         }
         return estado;
+    }
+
+    @Override
+    public boolean eleccion() {
+          return estado;
     }
     
 }
