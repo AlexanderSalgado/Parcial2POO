@@ -8,6 +8,8 @@ package Main.Arqueros;
 import Main.AbstractFactory;
 import Main.Barbaros.FactoryBarbaros;
 import Main.Brujos.FactoryBrujos;
+import Main.VehiculosArqueros.Vehiculo1;
+import Main.VehiculosArqueros.Vehiculo2;
 
 
 /**
@@ -28,6 +30,11 @@ public class CentroArqueros implements AbstractFactory {
                 return new EscuadronArquero();
             case "Especialista Arquero":
                 return new EspecialistaArquero();
+            case "Vehiculo 1":
+                return new Vehiculo1();
+             case "Vehiculo 2":
+                return new Vehiculo2();
+             
         }
         return null;
     }

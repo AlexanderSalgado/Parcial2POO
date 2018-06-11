@@ -12,7 +12,7 @@ package Main.CentrodeMando;
 public class CentroMando{
      public int vida=150000;
      public int oro=300;
-     public int esenciazul=300;
+     public int EA=300;
      public int mana=300;
      public int capacidad1=1000;
      public int capacidad2=5000;
@@ -52,12 +52,12 @@ public class CentroMando{
     }
 
      
-    public int getEsenciazul() {
-        return esenciazul;
+    public int getEA() {
+        return EA;
     }
 
-    public void setEsenciazul(int esenciazul) {
-        this.esenciazul = esenciazul;
+    public void setEA(int EA) {
+        this.EA = EA;
     }
 
     public int getMana() {
@@ -85,10 +85,10 @@ public class CentroMando{
     }
 
     
-    public void level() {
-        setCapacidad1(capacidadx1);
-        setCapacidad2(capacidadx2);
-        setCapacidad3(capacidadx3);
+    public void level(double one, double two, double three) {
+        setCapacidad1((int)one);
+        setCapacidad2((int)two);
+        setCapacidad3((int)three);
     }
 }
     

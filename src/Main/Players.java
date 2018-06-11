@@ -39,7 +39,12 @@ public class Players {
         this.vehiculo2= vehiculo2;
         this.entrenamiento = entrenamiento;
     }
-    
+
+    Players(int i, String raza, CentroMando mando2, ArrayList<FactoryArqueros> genoro2, ArrayList<FactoryArqueros> genel2, ArrayList<FactoryArqueros> gengem2, ArrayList<FactoryArqueros> entre2, ArrayList<FactoryArqueros> ve12, ArrayList<FactoryArqueros> ve22, ArrayList<FactoryArqueros> entrenadas2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
 
     public ArrayList<FactoryArqueros> getRecurso1(){
         return recurso1;
