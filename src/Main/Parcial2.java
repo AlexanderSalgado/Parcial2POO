@@ -14,6 +14,7 @@ import java.util.Scanner;
  *
  * @author rodol
  */
+
 public class Parcial2 {
 public static void main(String[] args) {
        int cont=0;
