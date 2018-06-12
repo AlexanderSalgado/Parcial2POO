@@ -10,7 +10,7 @@ package Main.CentrodeMando;
  * @author rodol
  */
 public class CentroMando{
-     public int vida=150000;
+     public int vida=30;
      public int oro=300;
      public int EA=300;
      public int mana=300;
@@ -27,7 +27,7 @@ public class CentroMando{
 
     
 
-     public int getCapacidad1() {
+     public int getCapacidad1( ) {
         return capacidad1;
     }
 

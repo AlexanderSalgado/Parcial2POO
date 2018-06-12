@@ -33,8 +33,22 @@ public class EntrenamientoArqueros implements FactoryArqueros {
         this.vida = vida;
    }
     
-   
+      public int getLista() {
+        return lista;
+    }
 
+    public void setLista(int lista) {
+        this.lista = lista;
+    }
+
+    public int getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(int posicion) {
+        this.posicion = posicion;
+    }
+   
     
     @Override
     public void atacar() {
@@ -46,7 +60,7 @@ public class EntrenamientoArqueros implements FactoryArqueros {
 
     @Override
     public void construir() {
- System.out.println("Se ha construido edificacion entrenamiento Arqueros");
+ System.out.println("Se ha construido edificacion entrenamiento para los Arqueros");
     }
 
 
@@ -118,12 +132,10 @@ public class EntrenamientoArqueros implements FactoryArqueros {
 
     @Override
     public void modificarlista(int num) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void modificarpocision(int num) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
       

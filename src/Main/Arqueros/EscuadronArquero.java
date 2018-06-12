@@ -11,7 +11,9 @@ package Main.Arqueros;
  */
 public class EscuadronArquero implements FactoryArqueros {
      public boolean estado= false;
-    public int vida=0;
+    public int vida=30;
+    public int lista=0;
+    public int posicion=0;
 
     public int getVida() {
         return vida;
@@ -23,6 +25,22 @@ public class EscuadronArquero implements FactoryArqueros {
 
     public void setEstado(boolean estado) {
         this.estado = estado;
+    }
+    
+    public int getLista() {
+        return lista;
+    }
+
+    public void setLista(int lista) {
+        this.lista = lista;
+    }
+
+    public int getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(int posicion) {
+        this.posicion = posicion;
     }
 
 
@@ -110,12 +128,10 @@ public class EscuadronArquero implements FactoryArqueros {
 
     @Override
     public void modificarlista(int num) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void modificarpocision(int num) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
   

@@ -24,27 +24,24 @@ public class Players {
     public ArrayList<FactoryArqueros> vehiculo1;
     public ArrayList<FactoryArqueros> vehiculo2;
     public ArrayList<FactoryArqueros> entrenamiento;
+    public ArrayList<FactoryArqueros> ataque;
     
     public Players(){
     }
 
-    public Players(int num,String raza,CentroMando mando, ArrayList<FactoryArqueros> recurso1,ArrayList<FactoryArqueros> recurso2,ArrayList<FactoryArqueros> recurso3,ArrayList<FactoryArqueros> vehiculo1,ArrayList<FactoryArqueros> vehiculo2,ArrayList<FactoryArqueros> entrenamiento) {
+    public Players(int num,String raza,CentroMando mando, ArrayList<FactoryArqueros> recurso1,ArrayList<FactoryArqueros> recurso2,ArrayList<FactoryArqueros> recurso3,ArrayList<FactoryArqueros> vehiculo1,ArrayList<FactoryArqueros> vehiculo2,ArrayList<FactoryArqueros> entrenamiento,ArrayList<FactoryArqueros> ataque) {
         this.num = num;
         this.raza = raza;
         this.mando = mando;
         this.recurso1 = recurso1;
         this.recurso2 = recurso2;
+        this.ataque= ataque; 
         this.recurso1 = recurso3;
         this.vehiculo1= vehiculo1;
         this.vehiculo2= vehiculo2;
         this.entrenamiento = entrenamiento;
+      
     }
-
-    Players(int i, String raza, CentroMando mando2, ArrayList<FactoryArqueros> genoro2, ArrayList<FactoryArqueros> genel2, ArrayList<FactoryArqueros> gengem2, ArrayList<FactoryArqueros> entre2, ArrayList<FactoryArqueros> ve12, ArrayList<FactoryArqueros> ve22, ArrayList<FactoryArqueros> entrenadas2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-
 
     public ArrayList<FactoryArqueros> getRecurso1(){
         return recurso1;
@@ -76,6 +73,14 @@ public class Players {
 
     public void setEntrenador(ArrayList<FactoryArqueros> entrenamiento) {
         this.entrenamiento = entrenamiento;
+    }
+    
+    public ArrayList<FactoryArqueros> getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(ArrayList<FactoryArqueros> ataque) {
+        this.ataque = ataque;
     }
 
     public ArrayList<FactoryArqueros> getVehiculo1() {

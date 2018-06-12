@@ -11,9 +11,11 @@ package Main.Arqueros;
  */
 public class EspecialistaArquero implements FactoryArqueros {
     public boolean estado=false;
-    public int vida=0;
-
+   public int vida=30;
+    public int lista=0;
+    public int posicion=0;
     
+  
     public boolean getEstado() {
         return estado;
     }
@@ -29,6 +31,22 @@ public class EspecialistaArquero implements FactoryArqueros {
 
     public void setVida(int vida) {
         this.vida = vida;
+    }
+    
+     public int getLista() {
+        return lista;
+    }
+
+    public void setLista(int lista) {
+        this.lista = lista;
+    }
+
+    public int getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(int posicion) {
+        this.posicion = posicion;
     }
      @Override
     public void atacar() {

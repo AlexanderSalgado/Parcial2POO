@@ -8,6 +8,9 @@ package Main.Arqueros;
 import Main.AbstractFactory;
 import Main.Barbaros.FactoryBarbaros;
 import Main.Brujos.FactoryBrujos;
+import Main.RecursosArqueros.GeneradorEA;
+import Main.RecursosArqueros.GeneradorMana;
+import Main.RecursosArqueros.GeneradorOro;
 import Main.VehiculosArqueros.Vehiculo1;
 import Main.VehiculosArqueros.Vehiculo2;
 
@@ -34,6 +37,14 @@ public class CentroArqueros implements AbstractFactory {
                 return new Vehiculo1();
              case "Vehiculo 2":
                 return new Vehiculo2();
+             case "Entrenador":
+                return new EntrenamientoArqueros();
+            case "Generador de Elixir":
+                return new GeneradorEA();
+            case "Generador de Gema":
+                return new GeneradorMana();
+            case "Generador de Oro":
+                return new GeneradorOro();
              
         }
         return null;

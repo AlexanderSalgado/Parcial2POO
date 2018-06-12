@@ -38,23 +38,26 @@ public static void main(String[] args) {
         ArrayList<FactoryArqueros> entrenadas2=new ArrayList<FactoryArqueros>();
         
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese que raza eligirá"); 
+        System.out.println("Ingrese que raza eligirá n/ Arqueros  Brujos  Barbaros"); 
         raza=leer.next();
         
-        /*while(raza!="Magos") {
-            System.out.println("Ingrese que raza eligirá");
-            raza=leer.next();
-        }*/
         
-        Players jugador1=new Players( 1 , raza, mando1,genoro,genel,genea,entre,vehi1,vehi2,entrenadas);
-        System.out.println("Ingrese que raza eligirá");
-        raza=leer.next();
-        /*while(raza!="Gigantes") {
-            System.out.println("Ingrese que raza eligirá");
+        
+        while(!raza.equalsIgnoreCase("Arqueros")  && !raza.equalsIgnoreCase("Barbaros") && !raza.equalsIgnoreCase("Brujos")) {
+            System.out.println("Por favor ingrese una raza valida para el jugador 1");
             raza=leer.next();
-        }*/
+        }
+        
+        Players jugador1=new Players( 1 , raza, mando1,genoro,genel,genea,entre,vehi1,vehi2,entrenadas,atac);
+        System.out.println("Arqueros     Barbaros     Brujos");
+        raza=leer.next();
+         while(!raza.equalsIgnoreCase("Arqueros")  && !raza.equalsIgnoreCase("Barbaros") && !raza.equalsIgnoreCase("Brujos")) {
+            System.out.println("Por favor ingrese una raza valida para el jugador 2");
+            raza=leer.next();
+        }
+        
         int contador=1;
-        Players jugador2=new Players(2, raza,mando2,genoro2,genel2,genea2,entre2,vehi12,vehi22, entrenadas2);
+        Players jugador2=new Players(2, raza,mando2,genoro2,genel2,genea,entre2,vehi12,vehi22, entrenadas2,atac2);
         Menu menu = new Menu(contador, jugador1, jugador2);
         Menu menu2 = new Menu(contador, jugador2, jugador1);
         
@@ -70,6 +73,7 @@ public static void main(String[] args) {
                 cont=jugador2.fase(cont);
             }
         }
+       
 }
 }
         
