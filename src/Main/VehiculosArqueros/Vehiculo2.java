@@ -90,8 +90,9 @@ public class Vehiculo2 implements FactoryArqueros {
     }
 
     @Override
-    public int modificarvida(int valor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int modificarvida(int num) {
+        setVida(vida-num);
+        return vida;
     }
 
     @Override

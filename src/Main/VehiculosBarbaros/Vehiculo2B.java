@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Main.VehiculosArqueros;
+package Main.VehiculosBarbaros;
 
-import Main.Arqueros.FactoryArqueros;
+import Main.Barbaros.FactoryBarbaros;
 
 /**
  *
  * @author rodol
  */
-public class Vehiculo1 implements FactoryArqueros {
-   
-    public boolean estado = false;
+public class Vehiculo2B implements FactoryBarbaros {
+     public boolean estado = false;
     public int vida=0;
      
     public boolean getEstado(){
@@ -35,50 +34,53 @@ public class Vehiculo1 implements FactoryArqueros {
 
     @Override
     public void atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void defender() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void construir() {
-        System.out.println("Se ha construido un vehiculo1");
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean entrenar() {
-        return estado;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean eleccion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public int vida() {
-       return vida; 
-        }
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     @Override
     public int recolectar() {
-        return 0;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void generar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public boolean estado() {
-          if(estado==false){
+       if(estado==false){
             setEstado(true);
         }
         else{
             setEstado(false);
         }
         return estado;
-    }
-
-    @Override
-    public boolean eleccion() {
-          return estado;
     }
 
     @Override
@@ -126,5 +128,4 @@ public class Vehiculo1 implements FactoryArqueros {
     public boolean pregunta() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }

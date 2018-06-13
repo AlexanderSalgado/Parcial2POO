@@ -21,7 +21,7 @@ public interface FactoryBrujos {
     boolean estado();
     int nombre(); 
     int fase();
-    int modificarvida(int valor);
+    int modificarvida(int num);
     int lista();
     int lugar();
     void modificarlista(int num);
