@@ -22,10 +22,10 @@ public class Players {
     public ArrayList<FactoryArqueros> recurso2;
     public ArrayList<FactoryArqueros> recurso3;
     public ArrayList<FactoryArqueros> vehiculo1;
+    public ArrayList<FactoryArqueros> ataque;
     public ArrayList<FactoryArqueros> vehiculo2;
     public ArrayList<FactoryArqueros> entrenamiento;
-    public ArrayList<FactoryArqueros> ataque;
-    
+
     public Players(){
     }
 

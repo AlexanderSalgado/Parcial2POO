@@ -39,7 +39,7 @@ public static void main(String[] args) {
         ArrayList<FactoryArqueros> entrenadas2=new ArrayList<FactoryArqueros>();
         
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese que raza eligirá n/ Arqueros  Brujos  Barbaros"); 
+        System.out.println("       Ingrese que raza eligirá \n ----Arqueros  Brujos  Barbaros----"); 
         raza=leer.next();
         
         
@@ -49,7 +49,7 @@ public static void main(String[] args) {
             raza=leer.next();
         }
         
-        Players jugador1=new Players( 1 , raza, mando1,genoro,genel,genea,entre,vehi1,vehi2,entrenadas,atac);
+        Players jugador1=new Players( 1 , raza, mando1,genoro,genel,genea,entre,vehi1,vehi2,entrenadas);
         System.out.println("Arqueros     Barbaros     Brujos");
         raza=leer.next();
          while(!raza.equalsIgnoreCase("Arqueros")  && !raza.equalsIgnoreCase("Barbaros") && !raza.equalsIgnoreCase("Brujos")) {
@@ -58,7 +58,7 @@ public static void main(String[] args) {
         }
         
         int contador=1;
-        Players jugador2=new Players(2, raza,mando2,genoro2,genel2,genea,entre2,vehi12,vehi22, entrenadas2,atac2);
+        Players jugador2=new Players(2, raza,mando2,genoro2,genel2,genea,entre2,vehi12,vehi22, entrenadas2);
         Menu menu = new Menu(contador, jugador1, jugador2);
         Menu menu2 = new Menu(contador, jugador2, jugador1);
         

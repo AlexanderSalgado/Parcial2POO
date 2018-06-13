@@ -10,7 +10,10 @@ package Main.Brujos;
  * @author rodol
  */
 public class EspecialistaBrujo implements FactoryBrujos {
-      public int vida=0;
+      public boolean estado=false;
+    public int vida=30;
+    public int posicion=0;
+    public int lista=0;
 
     public int getVida() {
         return vida;
@@ -19,18 +22,54 @@ public class EspecialistaBrujo implements FactoryBrujos {
     public void setVida(int vida) {
         this.vida = vida;
     }
+      public void setPosicion(int posicion) {
+        this.posicion = posicion;
+    }
+
+    public void setLista(int lista) {
+        this.lista = lista;
+    }
+
+    
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    
+  
      @Override
     public void atacar() {
-        System.out.println("30% de daño");
+        System.out.println("50% de daño");
     }
     
     @Override
     public void defender() {
-        System.out.println("20% de daño");
+        System.out.println("50% de daño");
     }
 
     @Override
     public void construir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
+
+    @Override
+    public boolean eleccion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean entrenar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int vida() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -45,7 +84,52 @@ public class EspecialistaBrujo implements FactoryBrujos {
     }
 
     @Override
-    public void entrenar() {
+    public boolean estado() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int nombre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int fase() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int modificarvida(int valor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int lista() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int lugar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void modificarlista(int num) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void modificarposicion(int pos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int posicion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean pregunta() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

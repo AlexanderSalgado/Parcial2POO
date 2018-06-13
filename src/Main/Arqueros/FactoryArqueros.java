@@ -20,13 +20,18 @@ public interface FactoryArqueros{
     int recolectar();
     void generar();
     boolean estado();
-    int nommbre(); 
+    int nombre(); 
     int fase();
     int modificarvida(int valor);
     int lista();
     int lugar();
     void modificarlista(int num);
-    void modificarpocision(int num);
+    public void modificarposicion(int pos);
+    public int posicion();
+    public boolean pregunta();
+    
+
+   
     
     
     

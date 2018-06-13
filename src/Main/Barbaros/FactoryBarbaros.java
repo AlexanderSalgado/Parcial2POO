@@ -10,7 +10,23 @@ package Main.Barbaros;
  * @author rodol
  */
 public interface FactoryBarbaros {
-    void atacar();
+       void atacar();
     void defender();
+    void construir();
+    boolean entrenar();
+    boolean eleccion();
+    int vida();
+    int recolectar();
+    void generar();
+    boolean estado();
+    int nombre(); 
+    int fase();
+    int modificarvida(int valor);
+    int lista();
+    int lugar();
+    void modificarlista(int num);
+    public void modificarposicion(int pos);
+    public int posicion();
+    public boolean pregunta();
     
 }
