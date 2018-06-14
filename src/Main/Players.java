@@ -23,24 +23,47 @@ public class Players {
     public ArrayList<FactoryArqueros> recurso3;
     public ArrayList<FactoryArqueros> vehiculo1;
     public ArrayList<FactoryArqueros> ataque;
+    public ArrayList<FactoryArqueros> defensa;
     public ArrayList<FactoryArqueros> vehiculo2;
     public ArrayList<FactoryArqueros> entrenamiento;
+    public ArrayList<FactoryArqueros> entrenado;
+    public FactoryArqueros[] Lista;
 
     public Players(){
     }
 
-    public Players(int num,String raza,CentroMando mando, ArrayList<FactoryArqueros> recurso1,ArrayList<FactoryArqueros> recurso2,ArrayList<FactoryArqueros> recurso3,ArrayList<FactoryArqueros> vehiculo1,ArrayList<FactoryArqueros> vehiculo2,ArrayList<FactoryArqueros> entrenamiento,ArrayList<FactoryArqueros> ataque) {
+   /* public Players(int num,String raza,CentroMando mando, ArrayList<FactoryArqueros> recurso1,ArrayList<FactoryArqueros> recurso2,ArrayList<FactoryArqueros> recurso3,ArrayList<FactoryArqueros> vehiculo1,ArrayList<FactoryArqueros> vehiculo2,ArrayList<FactoryArqueros> entrenamiento,ArrayList<FactoryArqueros> ataque) {
         this.num = num;
         this.raza = raza;
         this.mando = mando;
         this.recurso1 = recurso1;
         this.recurso2 = recurso2;
         this.ataque= ataque; 
+        this.defensa =defensa;
         this.recurso1 = recurso3;
         this.vehiculo1= vehiculo1;
         this.vehiculo2= vehiculo2;
         this.entrenamiento = entrenamiento;
+        this.entrenado= entrenado;
+        this.lista =lista;
       
+       
+    }*/
+
+    public Players(int num, String raza, CentroMando mando, ArrayList<FactoryArqueros> recurso1, ArrayList<FactoryArqueros> recurso2, ArrayList<FactoryArqueros> recurso3, ArrayList<FactoryArqueros> entrenamiento, ArrayList<FactoryArqueros> vehiculo1, ArrayList<FactoryArqueros> vehiculo2, ArrayList<FactoryArqueros> entrenado, ArrayList<FactoryArqueros> ataque, ArrayList<FactoryArqueros> defensa, FactoryArqueros[] Lista) {
+         this.num = num;
+        this.raza = raza;
+        this.mando = mando;
+        this.recurso1 = recurso1;
+        this.recurso2 = recurso2;
+        this.ataque= ataque; 
+        this.defensa =defensa;
+        this.recurso1 = recurso3;
+        this.vehiculo1= vehiculo1;
+        this.vehiculo2= vehiculo2;
+        this.entrenamiento = entrenamiento;
+        this.entrenado= entrenado;
+        this.Lista =Lista;
     }
 
     public ArrayList<FactoryArqueros> getRecurso1(){
@@ -132,6 +155,24 @@ public class Players {
         this.num = num;
     }
     
+     public ArrayList<FactoryArqueros> getDefensa() {
+        return defensa;
+    }
+
+    public void setDefendiendo(ArrayList<FactoryArqueros> defendiendo) {
+        this.defensa = defensa;
+    }
+    
+    
+    public FactoryArqueros[] getLista() {
+        return Lista;
+    }
+
+    public void setLista(FactoryArqueros[] Lista) {
+        this.Lista = Lista;
+    }
+   
+
     
     
     public int fase(int cont){
@@ -144,6 +185,7 @@ public class Players {
         cont=cont+1;
         return cont;
     }
+
     
     
     
