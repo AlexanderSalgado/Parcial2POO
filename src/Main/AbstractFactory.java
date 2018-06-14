@@ -5,16 +5,21 @@
  */
 package Main;
 
-import Main.Arqueros.FactoryArqueros;
-import Main.Barbaros.FactoryBarbaros;
-import Main.Brujos.FactoryBrujos;
+import Edificaciones.Edificaciones;
+import Milicia.Milicia;
+import Raza.Raza;
+import Recursos.Recursos;
+import Vehiculos.Vehiculos;
+
+
 /**
  *
  * @author rodol
  */
 public interface AbstractFactory {
-    
-   FactoryBarbaros getBarbaro(String type);
-   FactoryArqueros getArqueros(String type);
-   FactoryBrujos getBrujos(String type);
+   Edificaciones getEdificacion(String type);
+   Raza getRaza(String type);
+   Recursos getRecurso(String type);
+   Vehiculos getVehiculo(String type);
+   Milicia getMilicia(String type);
 }
