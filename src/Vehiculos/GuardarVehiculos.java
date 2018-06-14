@@ -20,42 +20,42 @@ import java.util.ArrayList;
         vehiculo = new ArrayList<>();
     }
 
-    public void agregarVehiculo1Br() {
+    public void FVehiculo1Bru() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos escoba = factoryV.getVehiculo("Vehiculo1Br");
         vehiculo.add(escoba);
     }
     
-    public void agregarVehiculo2Br() {
+    public void FVehiculo2Bru() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos auto = factoryV.getVehiculo("Vehiculo2Br");
         vehiculo.add(auto);
     }
     
-    public void agregarVehiculo1Bar() {
+    public void FVehiculo1Bar() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos nave = factoryV.getVehiculo("Vehiculo1Bar");
         vehiculo.add(nave);
     }
     
-    public void agregarVehiculo2Bar() {
+    public void FVehiculo2Bar() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos jugger = factoryV.getVehiculo("Vehiculo2Bar");
         vehiculo.add(jugger);
     }
     
-    public void agregarVehiculo1Arq() {
+    public void FVehiculo1Arq() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos avioneta = factoryV.getVehiculo("Vehiculo1Arq");
         vehiculo.add(avioneta);
     }
     
-    public void agregarVehiculo2Arq() {
+    public void FVehiculo2Arq() {
         AbstractFactory factoryV;
         factoryV =  FactoryProducer.getFactory("vehiculo");
         Vehiculos tanque = factoryV.getVehiculo("Vehiculo2Arq");
@@ -69,36 +69,6 @@ import java.util.ArrayList;
         System.out.println("\n");
 
     } 
-
-    public void Vehiculo1Arq() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void Vehiculo2Arq() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Vehiculo1Bar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Vehiculo2Bar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Vehiculo1Bru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void Vehiculo2Bru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void vehiculo1Bru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void vehiculo2Bru() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-}
+   

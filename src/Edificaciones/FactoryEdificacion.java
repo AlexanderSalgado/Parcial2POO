@@ -27,9 +27,9 @@ public class FactoryEdificacion implements AbstractFactory {
             case "recolector3A":
                 return new RecolectorMana();
             case "vehiculo1Arq":
-                return new Vehiculo1Arq();
+                return new FVehiculo1Arq();
             case "vehiculo2Arq":
-                return new Vehiculo2Arq();
+                return new FVehiculo2Arq();
             case "cuartelArq":
                 return new CuartelArqueros();
             case "centroArq":
@@ -41,9 +41,9 @@ public class FactoryEdificacion implements AbstractFactory {
             case "recolector3Bar":
                 return new RecolectorArmas();
             case "Vehiculo1Bar":
-                return new Vehiculo1Bar();
+                return new FVehiculo1Bar();
             case "Vehiculo2Bar":
-                return new Vehiculo2Bar();
+                return new FVehiculo2Bar();
             case "CuartelBarbaros":
                 return new CuartelBarbaros();
             case "centroBar":
@@ -55,9 +55,9 @@ public class FactoryEdificacion implements AbstractFactory {
             case "recolector3Bru":
                 return new RecolectorLibros();
             case "vehiculo1Bru":
-                return new Vehiculo1Bru();
+                return new FVehiculo1Bru();
             case "vehiculo2Bru":
-                return new Vehiculo2Bru();
+                return new FVehiculo2Bru();
             case "CuartelBrujos":
                 return new CuartelBrujos();
             case "centroBru":
@@ -68,22 +68,22 @@ public class FactoryEdificacion implements AbstractFactory {
 
     @Override
     public Raza getRaza(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
     public Recursos getRecurso(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
     public Vehiculos getVehiculo(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
     public Milicia getMilicia(String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     

@@ -9,9 +9,9 @@ package Edificaciones;
  *
  * @author rodol
  */
-public class Vehiculo2Bar implements Edificaciones {
+public class FVehiculo2Bar implements Edificaciones {
         int vida = 1000;
-    String name = "Vehiculo2Bar";
+    String name = "FVehiculo2Bar";
     int comida, sangre, armas;
     @Override
     public void construir() {

@@ -12,7 +12,7 @@ package Edificaciones;
 public class CentroArqueros implements Edificaciones {
      int vida = 10000;
     String name = "Centro Mando Arqueros";
-    int oro = 500,  mana= 500, esencia = 500;
+    int oro = 800,  mana= 1000, esencia = 600;
    
     @Override
     public int getRecurso1(){

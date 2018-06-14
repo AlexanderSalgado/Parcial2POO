@@ -9,13 +9,14 @@ package Edificaciones;
  *
  * @author rodol
  */
-public class Vehiculo2Arq implements Edificaciones {
-        int vida = 1000;
-    String name = "Vehiculo2Arq";
-    int oro, esencia, mana;
+public class FVehiculo2Bru implements Edificaciones {
+
+    int vida = 1000;
+    String name = "FVehiculo2Bru";
+    int almas, pociones, libros;
     @Override
     public void construir() {
-System.out.println("Se esta construyendo un vehiculo2 de Arqueros");
+System.out.println("Se esta construyendo un vehiculo2 de brujo");
     }
 
     @Override
@@ -25,18 +26,18 @@ System.out.println("Se esta construyendo un vehiculo2 de Arqueros");
 
     @Override
     public int getRecurso1() {
-        return oro;
+        return almas;
     }
 
     @Override
     public int getRecurso2() {
-        return esencia;
+        return pociones;
 
     }
 
     @Override
     public int getRecurso3() {
-      return mana;
+      return libros;
 
     }
 
@@ -47,9 +48,9 @@ System.out.println("Se esta construyendo un vehiculo2 de Arqueros");
 
     @Override
     public void actualizarRecursos(int recu1, int recu2, int recu3, int vida) {
-        this.oro = recu1;
-        this.esencia = recu2;
-        this.mana = recu3;
+        this.almas = recu1;
+        this.pociones = recu2;
+        this.libros = recu3;
         this.vida = vida;
     }
     

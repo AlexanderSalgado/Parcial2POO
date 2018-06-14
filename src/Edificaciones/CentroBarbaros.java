@@ -12,7 +12,7 @@ package Edificaciones;
 public class CentroBarbaros implements Edificaciones{
      int vida = 10000;
     String name = "Centro Mando Barbaros";
-    int sangre = 500,  comida= 500, armas = 500;
+    int sangre = 800,  comida= 1000, armas = 600;
    
     @Override
     public int getRecurso1(){

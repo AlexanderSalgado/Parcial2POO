@@ -5,27 +5,10 @@
  */
 package Main;
 
-import Edificaciones.CentroArqueros;
-import Edificaciones.CentroBarbaros;
-import Edificaciones.CuartelArqueros;
-import Edificaciones.CuartelBarbaros;
-import Edificaciones.CuartelBrujos;
+
+
 import Edificaciones.Edificaciones;
 import Edificaciones.GuardarEdificaciones;
-import Edificaciones.RecolectorAlmas;
-import Edificaciones.RecolectorArmas;
-import Edificaciones.RecolectorComida;
-import Edificaciones.RecolectorEscencia;
-import Edificaciones.RecolectorLibros;
-import Edificaciones.RecolectorMana;
-import Edificaciones.RecolectorOro;
-import Edificaciones.RecolectorPociones;
-import Edificaciones.RecolectorSangre;
-import Edificaciones.Vehiculo1Arq;
-import Edificaciones.Vehiculo1Bar;
-import Edificaciones.Vehiculo1Bru;
-import Edificaciones.Vehiculo2Arq;
-import Edificaciones.Vehiculo2Bar;
 import Milicia.GuardarMilicia;
 import Vehiculos.GuardarVehiculos;
 import java.util.InputMismatchException;
@@ -50,20 +33,20 @@ public class Menu {
         return menu;
     }
     
-    //Lista para el jugador que elija la raza mago
+    //PARA GUARDAR LO DEL MAGO
     GuardarMilicia listaMiliM = new GuardarMilicia();
     GuardarVehiculos listaVehiM = new GuardarVehiculos();
     GuardarEdificaciones listaEdiM = new GuardarEdificaciones(); 
     
-    //Lista para el jugador que elija la raza dark sider
+    //PARA LO DEL ARQUERO
     GuardarMilicia listaMiliD = new GuardarMilicia();
     GuardarVehiculos listaVehiD = new GuardarVehiculos();
-    GuardarEdificaciones listaEdiD = new GuardarEdificaciones(); 
+    GuardarEdificaciones listaEdiA = new GuardarEdificaciones(); 
     
-    //Lista para el jugador que elija la raza muggle (humana)
+    //PARA LOS BARBAROS
     GuardarMilicia listaMiliMu = new GuardarMilicia();
-    GuardarVehiculos listaVehiMu = new GuardarVehiculos();
-    GuardarEdificaciones listaEdiMu = new GuardarEdificaciones(); 
+    GuardarVehiculos listaVehiBar = new GuardarVehiculos();
+    GuardarEdificaciones listaEdiBar = new GuardarEdificaciones(); 
     
     boolean seguir = true;
     Players jugador1 = new Players();
@@ -148,7 +131,7 @@ public class Menu {
                         if(y == 1){
                             if(recurso.getRecurso1()>=200 && recurso.getRecurso3()>=300){
                                 System.out.println("Construyendo cuartel de magos");
-                                listaEdiM.CuartelBrujos();
+                                listaEdiM.agregarCuartelBrujos();
                                 recu1=recurso.getRecurso1()-200;
                                 recu2=recurso.getRecurso2();
                                 recu3=recurso.getRecurso3()-300;
@@ -162,7 +145,7 @@ public class Menu {
                         else if(y == 2){
                             if(recurso.getRecurso2()>=600 && recurso.getRecurso3()>=400){
                                 System.out.println("Construyendo recolector de almas");
-                                listaEdiM.RecolectorAlmas();
+                                listaEdiM.agregarRecolectorAlmas();
                                 recu1=recurso.getRecurso1();
                                 recu2=recurso.getRecurso2()-600;
                                 recu3=recurso.getRecurso3()-400;
@@ -176,7 +159,7 @@ public class Menu {
                         else if(y == 3){
                             if(recurso.getRecurso1()>=400 && recurso.getRecurso3()>=200){
                                 System.out.println("Construyendo recolector de pociones");
-                                listaEdiM.RecolectorPociones();
+                                listaEdiM.agregarRecolectorPociones();
                                 recu1=recurso.getRecurso1()-400;
                                 recu2=recurso.getRecurso2();
                                 recu3=recurso.getRecurso3()-200;
@@ -187,7 +170,7 @@ public class Menu {
                         else if(y == 4){
                             if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=300){
                                 System.out.println("Construyendo recolector de libros");
-                                listaEdiM.RecolectorLibros();
+                                listaEdiM.agregarRecolectorLibros();
                                 recu1=recurso.getRecurso1()-300;
                                 recu2=recurso.getRecurso2()-300;
                                 recu3=recurso.getRecurso3();
@@ -201,7 +184,7 @@ public class Menu {
                         else if(y == 5){
                             if(recurso.getRecurso2()>=400 && recurso.getRecurso3()>=200){
                                 System.out.println("Construyendo fabrica de Vehiculo 1");
-                                listaEdiM.Vehiculo1Bru();
+                                listaEdiM.agregarVehi1Bru();
                                 recu1=recurso.getRecurso1();
                                 recu2=recurso.getRecurso2()-400;
                                 recu3=recurso.getRecurso3()-200;
@@ -215,7 +198,7 @@ public class Menu {
                         else if(y == 6){
                             if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=100){
                                 System.out.println("Construyendo fabrica de Vehiculo 2");
-                                listaEdiM.Vehiculo2Bru();
+                                listaEdiM.agregarVehi2Bru();
                                 recu1=recurso.getRecurso1()-300;
                                 recu2=recurso.getRecurso2()-100;
                                 recu3=recurso.getRecurso3();
@@ -254,7 +237,7 @@ public class Menu {
                             if(listaEdiM.verificarEdificacion("Fabrica Vehiculo 1")){
                                 if(recurso1.getRecurso1()>=200 && recurso1.getRecurso3()>=400){
                                     System.out.println("Armando Vehiculo 1");
-                                    listaVehiM.Vehiculo1Bru();
+                                    listaVehiM.FVehiculo1Bru();
                                     recu11 = recurso1.getRecurso1()-200;
                                     recu22 = recurso1.getRecurso2();
                                     recu33 = recurso1.getRecurso3()-400;
@@ -274,7 +257,7 @@ public class Menu {
                             if(listaEdiM.verificarEdificacion("Fabrica Auto Vehiculo 2")){
                                 if(recurso1.getRecurso1()>=400 && recurso1.getRecurso2()>=100){
                                     System.out.println("Armando Vehiculo 2");
-                                    listaVehiM.Vehiculo2Bru();
+                                    listaVehiM.FVehiculo2Bru();
                                     recu11 = recurso1.getRecurso1()-400;
                                     recu22 = recurso1.getRecurso2()-100;
                                     recu33 = recurso1.getRecurso3();
@@ -374,7 +357,7 @@ public class Menu {
             int y = 0;
             Scanner M = new Scanner(System.in);
 
-            listaEdiD.CentroArqueros();
+            listaEdiA.CentroArqueros();
 
             while (x != 8) {
                 escoger();
@@ -392,12 +375,12 @@ public class Menu {
                             System.out.println("6. Construir fabrica de vehiculo 2. ");
                             System.out.println("Deseo construir: ");
                             y = M.nextInt();
-                            Edificaciones recurso = listaEdiD.getRecursos();
+                            Edificaciones recurso = listaEdiA.getRecursos();
                             int recu1,recu2,recu3,vida;
                             if(y == 1){
                                 if(recurso.getRecurso1()>=200 && recurso.getRecurso3()>=300){
                                     System.out.println("Construyendo cuartel de Arqueros");
-                                    listaEdiD.CuartelArqueros();
+                                    listaEdiA.agregarCuartelArqueros();
                                     recu1=recurso.getRecurso1()-200;
                                     recu2=recurso.getRecurso2();
                                     recu3=recurso.getRecurso3()-300;
@@ -411,7 +394,7 @@ public class Menu {
                             else if(y == 2){
                                 if(recurso.getRecurso2()>=600 && recurso.getRecurso3()>=400){
                                     System.out.println("Construyendo recolector de oro");
-                                    listaEdiD.RecolectorOro();
+                                    listaEdiA.agregarRecolectorOro();
                                     recu1=recurso.getRecurso1();
                                     recu2=recurso.getRecurso2()-600;
                                     recu3=recurso.getRecurso3()-400;
@@ -425,7 +408,7 @@ public class Menu {
                             else if(y == 3){
                                 if(recurso.getRecurso1()>=400 && recurso.getRecurso3()>=200){
                                     System.out.println("Construyendo recolector de esencia");
-                                    listaEdiD.RecolectorEscencia();
+                                    listaEdiA.agregarRecolectorEsencia();
                                     recu1=recurso.getRecurso1()-400;
                                     recu2=recurso.getRecurso2();
                                     recu3=recurso.getRecurso3()-200;
@@ -436,7 +419,7 @@ public class Menu {
                             else if(y == 4){
                                 if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=300){
                                     System.out.println("Construyendo recolector de mana");
-                                    listaEdiD.RecolectorMana();
+                                    listaEdiA.agregarRecolectorMana();
                                     recu1=recurso.getRecurso1()-300;
                                     recu2=recurso.getRecurso2()-300;
                                     recu3=recurso.getRecurso3();
@@ -450,7 +433,7 @@ public class Menu {
                             else if(y == 5){
                                 if(recurso.getRecurso2()>=400 && recurso.getRecurso3()>=200){
                                     System.out.println("Construyendo fabrica de vehiculos 1");
-                                    listaEdiD.Vehiculo1Arq();
+                                    listaEdiA.agregarVehi1Arq();
                                     recu1=recurso.getRecurso1();
                                     recu2=recurso.getRecurso2()-400;
                                     recu3=recurso.getRecurso3()-200;
@@ -464,7 +447,7 @@ public class Menu {
                             else if(y == 6){
                                 if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=100){
                                     System.out.println("Construyendo fabrica de vehiculo 2");
-                                    listaEdiD.Vehiculo2Arq();
+                                    listaEdiA.agregarVehi2Arq();
                                     recu1=recurso.getRecurso1()-300;
                                     recu2=recurso.getRecurso2()-100;
                                     recu3=recurso.getRecurso3();
@@ -497,13 +480,13 @@ public class Menu {
                             System.out.println("2. Armar vehiculo 2.");
                             System.out.println("Deseo armar vehiculo: ");
                             y = M.nextInt();
-                            Edificaciones recurso1 = listaEdiD.getRecursos();
+                            Edificaciones recurso1 = listaEdiA.getRecursos();
                             int recu11, recu22,recu33,vidaa;
                             if(y == 1){
-                                if(listaEdiD.verificarEdificacion("Fabrica vehiculo 1")){
+                                if(listaEdiA.verificarEdificacion("Fabrica vehiculo 1")){
                                     if(recurso1.getRecurso1()>=200 && recurso1.getRecurso3()>=400){
                                         System.out.println("Armando vehiculo 1");
-                                        listaVehiD.Vehiculo1Arq();
+                                        listaVehiD.FVehiculo1Arq();
                                         recu11 = recurso1.getRecurso1()-200;
                                         recu22 = recurso1.getRecurso2();
                                         recu33 = recurso1.getRecurso3()-400;
@@ -520,10 +503,10 @@ public class Menu {
 
                             }
                             else if(y == 2){
-                                if(listaEdiD.verificarEdificacion("Fabrica vehiculo 2")){
+                                if(listaEdiA.verificarEdificacion("Fabrica vehiculo 2")){
                                     if(recurso1.getRecurso1()>=400 && recurso1.getRecurso2()>=100){
                                         System.out.println("Armando vehiculo 2");
-                                        listaVehiD.Vehiculo2Arq();
+                                        listaVehiD.FVehiculo2Arq();
                                         recu11 = recurso1.getRecurso1()-400;
                                         recu22 = recurso1.getRecurso2()-100;
                                         recu33 = recurso1.getRecurso3();
@@ -544,9 +527,9 @@ public class Menu {
                             System.out.println("2. Entrenar especialista Arqueros. ");
                             System.out.println("Deseo entrenar: ");
                             y = M.nextInt();
-                            Edificaciones recurso2 = listaEdiD.getRecursos();
+                            Edificaciones recurso2 = listaEdiA.getRecursos();
                             int recu111, recu222, recu333,vidaaa;
-                            if(listaEdiD.verificarEdificacion("Cuartel arqueros")){
+                            if(listaEdiA.verificarEdificacion("Cuartel arqueros")){
                                 if(y == 1){
                                     if(recurso2.getRecurso2()>=200 && recurso2.getRecurso3()>=100){
                                         System.out.println("Entrenando escuadron arqueros");
@@ -594,7 +577,7 @@ public class Menu {
                             y = M.nextInt();
                             if(y == 1){
                                 System.out.println("Mostrando edificios");
-                                listaEdiD.mostrarListaEdificaciones();
+                                listaEdiA.mostrarListaEdificaciones();
                             }
                             else if(y == 2){
                                 System.out.println("Mostrando vehiculos");
@@ -623,7 +606,7 @@ public class Menu {
         int y = 0;
         Scanner M = new Scanner(System.in);
         
-        listaEdiMu.CentroBarbaros();
+        listaEdiBar.CentroBarbaros();
         
         while (x != 8) {
             escoger();
@@ -641,12 +624,12 @@ public class Menu {
                         System.out.println("6. Construir fabrica de vehiculo 2. ");
                         System.out.println("Deseo construir: ");
                         y = M.nextInt();
-                        Edificaciones recurso = listaEdiMu.getRecursos();
+                        Edificaciones recurso = listaEdiBar.getRecursos();
                         int recu1,recu2,recu3,vida;
                         if(y == 1){
                             if(recurso.getRecurso1()>=200 && recurso.getRecurso3()>=300){
                                 System.out.println("Construyendo cuartel de barbaros");
-                                listaEdiMu.CuartelBarbaros();
+                                listaEdiBar.agregarCuartelBarbaro();
                                 recu1=recurso.getRecurso1()-200;
                                 recu2=recurso.getRecurso2();
                                 recu3=recurso.getRecurso3()-300;
@@ -660,7 +643,7 @@ public class Menu {
                         else if(y == 2){
                             if(recurso.getRecurso2()>=600 && recurso.getRecurso3()>=400){
                                 System.out.println("Construyendo recolector de comida");
-                                listaEdiMu.RecolectorComida();
+                                listaEdiBar.agregarRecolectorComida();
                                 recu1=recurso.getRecurso1();
                                 recu2=recurso.getRecurso2()-600;
                                 recu3=recurso.getRecurso3()-400;
@@ -674,7 +657,7 @@ public class Menu {
                         else if(y == 3){
                             if(recurso.getRecurso1()>=400 && recurso.getRecurso3()>=200){
                                 System.out.println("Construyendo recolector de sangre");
-                                listaEdiMu.RecolectorSangre();
+                                listaEdiBar.agregarRecolectorSangre();
                                 recu1=recurso.getRecurso1()-400;
                                 recu2=recurso.getRecurso2();
                                 recu3=recurso.getRecurso3()-200;
@@ -685,7 +668,7 @@ public class Menu {
                         else if(y == 4){
                             if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=300){
                                 System.out.println("Construyendo recolector de armas");
-                                listaEdiMu.RecolectorArmas();
+                                listaEdiBar.agregarRecolectorArmas();
                                 recu1=recurso.getRecurso1()-300;
                                 recu2=recurso.getRecurso2()-300;
                                 recu3=recurso.getRecurso3();
@@ -699,7 +682,7 @@ public class Menu {
                         else if(y == 5){
                             if(recurso.getRecurso2()>=400 && recurso.getRecurso3()>=200){
                                 System.out.println("Construyendo fabrica de vehiculo1");
-                                listaEdiMu.Vehiculo1Bar();
+                                listaEdiBar.agregarVehi1Bar();
                                 recu1=recurso.getRecurso1();
                                 recu2=recurso.getRecurso2()-400;
                                 recu3=recurso.getRecurso3()-200;
@@ -713,7 +696,7 @@ public class Menu {
                         else if(y == 6){
                             if(recurso.getRecurso1()>=300 && recurso.getRecurso2()>=100){
                                 System.out.println("Construyendo fabrica de vehiculos2");
-                                listaEdiMu.Vehiculo2Bar();
+                                listaEdiBar.agregarVeh2Bar();
                                 recu1=recurso.getRecurso1()-300;
                                 recu2=recurso.getRecurso2()-100;
                                 recu3=recurso.getRecurso3();
@@ -746,13 +729,13 @@ public class Menu {
                         System.out.println("2. Armar Vehiculo2. ");
                         System.out.println("Deseo armar vehiculo: ");
                         y = M.nextInt();
-                        Edificaciones recurso1 = listaEdiMu.getRecursos();
+                        Edificaciones recurso1 = listaEdiBar.getRecursos();
                         int recu11, recu22,recu33,vidaa;
                         if(y == 1){
-                            if(listaEdiMu.verificarEdificacion("Fabrica vehiculo2")){
+                            if(listaEdiBar.verificarEdificacion("Fabrica vehiculo2")){
                                 if(recurso1.getRecurso1()>=200 && recurso1.getRecurso3()>=400){
                                     System.out.println("Armando vehiculo2");
-                                    listaVehiMu.Vehiculo1Bar();
+                                    listaVehiBar.FVehiculo1Bar();
                                     recu11 = recurso1.getRecurso1()-200;
                                     recu22 = recurso1.getRecurso2();
                                     recu33 = recurso1.getRecurso3()-400;
@@ -769,10 +752,10 @@ public class Menu {
                             
                         }
                         else if(y == 2){
-                            if(listaEdiMu.verificarEdificacion("Fabrica Tanque")){
+                            if(listaEdiBar.verificarEdificacion("Fabrica Tanque")){
                                 if(recurso1.getRecurso1()>=400 && recurso1.getRecurso2()>=100){
                                     System.out.println("Armando tanque");
-                                    listaVehiMu.Vehiculo2Bar();
+                                    listaVehiBar.FVehiculo2Bar();
                                     recu11 = recurso1.getRecurso1()-400;
                                     recu22 = recurso1.getRecurso2()-100;
                                     recu33 = recurso1.getRecurso3();
@@ -793,12 +776,12 @@ public class Menu {
                         System.out.println("2. Entrenar especialista barbaro.");
                         System.out.println("Deseo entrenar: ");
                         y = M.nextInt();
-                        Edificaciones recurso2 = listaEdiMu.getRecursos();
+                        Edificaciones recurso2 = listaEdiBar.getRecursos();
                         int recu111, recu222, recu333,vidaaa;
-                        if(listaEdiMu.verificarEdificacion("Cuartel Muggle")){
+                        if(listaEdiBar.verificarEdificacion("Cuartel barbaro")){
                             if(y == 1){
                                 if(recurso2.getRecurso2()>=200 && recurso2.getRecurso3()>=100){
-                                    System.out.println("Entrenando escuadron muggle");
+                                    System.out.println("Entrenando escuadron barbaro");
                                     listaMiliMu.EscuadronBarbaros();
                                     recu111 = recurso2.getRecurso1();
                                     recu222 = recurso2.getRecurso2()-200;
@@ -812,7 +795,7 @@ public class Menu {
                             }
                             else if(y == 2){
                                 if(recurso2.getRecurso1()>=100 && recurso2.getRecurso3()>=400){
-                                    System.out.println("Entrenando especialista muggle");
+                                    System.out.println("Entrenando especialista barbaro");
                                     listaMiliMu.EspecialistaBarbaros();
                                     recu111 = recurso2.getRecurso1()-100;
                                     recu222 = recurso2.getRecurso2();
@@ -826,7 +809,7 @@ public class Menu {
                             }
                         }
                         else{
-                            System.out.println("No existe todavia un cuartel de muggles.");
+                            System.out.println("No existe todavia un cuartel de barbaros.");
                         }
                         break;
                     case 5:
@@ -843,11 +826,11 @@ public class Menu {
                         y = M.nextInt();
                         if(y == 1){
                             System.out.println("Mostrando edificios");
-                            listaEdiMu.mostrarListaEdificaciones();
+                            listaEdiBar.mostrarListaEdificaciones();
                         }
                         else if(y == 2){
                             System.out.println("Mostrando vehiculos");
-                            listaVehiMu.mostrarListaVehiculos();
+                            listaVehiBar.mostrarListaVehiculos();
                         }
                         else if(y == 3){
                             System.out.println("Mostrando tropas");

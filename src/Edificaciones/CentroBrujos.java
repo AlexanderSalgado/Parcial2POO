@@ -12,7 +12,7 @@ package Edificaciones;
 public class CentroBrujos implements Edificaciones {
      int vida = 10000;
     String name = "Centro Mando Brujo";
-    int pociones = 500,  almas= 500, libros = 500;
+    int pociones = 800,  almas= 1000, libros = 600;
    
     @Override
     public int getRecurso1(){
@@ -42,6 +42,7 @@ public class CentroBrujos implements Edificaciones {
         this.vida = vida;
     }
     
+     @Override
     public String toString() {
             return "Centro de Mando Brujos--- Recursos: Pociones("+pociones+"), Almas(" +almas+ "), Libros("+libros+"). Vida = "+vida;
     }
